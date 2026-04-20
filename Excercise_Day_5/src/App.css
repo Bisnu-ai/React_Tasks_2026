@@ -1,0 +1,74 @@
+main {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f1f2f6; 
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: serif; /* The screenshot uses a serif or similar distinct font for the card */
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+     background-color: #f1f2f6; 
+     color: #000;
+  }
+}
+
+.card-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #e54c60; /* Similar to the pinkish background behind the avatar */
+  padding: 10px;
+}
+
+.card h4 {
+  margin: 15px 0 25px;
+  font-size: 1.1rem;
+}
+
+.card-details {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.card-details p {
+  margin: 12px 0;
+}
+
+.card-details b {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
